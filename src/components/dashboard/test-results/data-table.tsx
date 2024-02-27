@@ -77,9 +77,9 @@ export function DataTable<TData, TValue>({
         </p>
       </div>
       <div className="border">
-        <div className="flex items-center justify-end gap-3 p-3">
+        <div className="lg:flex lg:flex-row grid grid-cols-2 items-center justify-end gap-3 p-3">
           <Input
-            placeholder="search for patients"
+            placeholder="Search for Name or Treated By"
             value={
               (table.getColumn("firstName")?.getFilterValue() as string) ?? ""
             }

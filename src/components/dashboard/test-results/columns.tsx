@@ -47,7 +47,7 @@ export const columns: ColumnDef<Result>[] = [
           alt="Avatar"
           style={{ width: "50px", height: "50px", borderRadius: "50%" }}
         />
-        <div className="flex gap-2">
+        <div className="flex flex-col lg:flex-row gap-2">
           <p>{row.original.firstName}</p>
           <div>{row.original.lastName}</div>
         </div>
